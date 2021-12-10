@@ -42,6 +42,7 @@ readStream.on('data', data => process.stdout.write(data));
 ## Education:
 ### Saint Petersburg State  University
 >Electromagnetic and Acoustic Processes (since 2020)
+    
 ### Courses:
 >RS School «JavaScript/Front-end. Stage 1» (2021)
 >

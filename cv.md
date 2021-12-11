@@ -1,11 +1,11 @@
 # **Ksenia Neustroeva**
-## Contact Information:
+## 📞 Contact Information:
 **E-mail:** <chrysostomost0000@gmail.com> \
 **Discord:** [Ksenia#5397](https://discord.com/users/777585234324750347) \
 **GitHub:** [k0ntinuum](https://github.com/k0ntinuum) 
 
 
-## About Me:
+## 📝 About Me:
 I'm studying at Saint Petersburg University (SPBU), majoring in physics. I’m passionate about Web Technologies and Development, so my aim is to become a proficient Front-End Web developer. This September I've enrolled to the Rolling Scopes school for a course in Front-End Development and have been thoroughly enjoying the learning process ever since. Regarding my motivation to continue doing what I do, expanding my knowledge and skill-set, my answer is always the same: I want to positively influence people's lives.
 
 On my Front-End Web Developer journey I want to find ways to strike at the heart of the most topical problems and goals of the industry today:
@@ -15,7 +15,7 @@ On my Front-End Web Developer journey I want to find ways to strike at the heart
 
 Although I'm only starting out, my plans go a long way in the future. Remaining humble and grateful for all experience I get, drawing pleasure from making an impact where I can, I sure hope that one day, when I become a CTO, I will flesh-out my vision of how this new Web-enabled world ought to be: with a keen ear for the User, with a never-ending strife for technical cunningness, with a development processes and toolbase in place for a rapid development of new exciting ideas and always with a hope for a brighter future in mind.
 
-## Key Skills:
+## 🧩 Key Skills:
 * HTML5 / CSS / SCSS / SASS
 * JavaScript / TypeScript
 * Node.js
@@ -25,7 +25,7 @@ Although I'm only starting out, my plans go a long way in the future. Remaining 
 * Linux / Unix
 * C / C++ Basics
  
-## Code Example:
+## 💾 Code Example:
 ```
 const process = require('process');
 const fs = require('fs');
@@ -36,10 +36,10 @@ const readStream = fs.createReadStream(filePath, 'utf-8');
 
 readStream.on('data', data => process.stdout.write(data));
 ```
-## Projects:
+## 💼 Projects:
 //TODO
 
-## Education:
+## 🎓 Education:
 ### Saint Petersburg State  University
 >Electromagnetic and Acoustic Processes (since 2020)
     
@@ -50,6 +50,6 @@ readStream.on('data', data => process.stdout.write(data));
 >
 >[Computer Science Center «Algorithms: Theory and Practice. Data Structures»](https://stepik.org/1547) (2021)
 
-## English Level:
+## 🌐 English Level:
 **B2 — B2+**
 

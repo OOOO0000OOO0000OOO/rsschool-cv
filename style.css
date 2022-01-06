@@ -55,6 +55,7 @@ p {
 }
 
 .container {
+  max-width: 1250px;
   margin-top: 20px;
   margin-bottom: 20px;
   border: 1px solid #888d92;
@@ -129,8 +130,18 @@ pre code span {
   color: #888d92;
 }
 
+.geo {
+  line-height: 1rem;
+}
+
 .geo::after {
   content: '';
+  float: left;
+  width: 1rem;
+  height: 1rem;
+  /* margin-right: 10px; */
+  background: url(./images/location.svg);
+  background-size: cover;
 }
 
 .profile {
@@ -148,16 +159,17 @@ pre code span {
 }
 
 .contact {
+  position: relative;
   width: 100%;
   margin-top: 25px;
-  padding: 0 10px 10px;
+  padding: 0 40px 10px 10px;
   background-color: transparent;
   border: 1px solid #888d92;
   border-radius: 2px;
   color: white;
   font: inherit;
   text-decoration: none;
-  font-size: 1.85rem;
+  font-size: 1.5rem;
   letter-spacing: normal;
   transition: .2s cubic-bezier(0.3, 0, 0.5, 1);
   transition-property: background-color, border-color;
@@ -165,18 +177,39 @@ pre code span {
 
 .contact:after {
   content: '';
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background: url(./images/down-arrow.svg);
+  background-size: contain;
+}
+
+.contact.active:after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 20px;
+  width: 10px;
+  height: 10px;
+  background: url(./images/up-arrow.svg);
+  background-size: contain;
 }
 
 .contact:hover {
-  background-color: rgba(255, 255, 255, 0.288);
+  background-color: rgba(255, 255, 255, 0.137);
   border-color: aliceblue;
 }
 
 .contacts {
   display: block;
+  max-height: 0;
+  overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 20px;
+  transition: max-height .2s;
 }
 
 .list {
@@ -216,19 +249,19 @@ footer {
   align-items: center;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1200px) {
   html {
-    font-size: 15px;
+    font-size: 14px;
   }
+}
+
+@media (max-width: 990px) {
   .container {
     width: 100%;
   }
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 14px;
-  }
   .main {
     flex-direction: column;
   }
@@ -246,12 +279,20 @@ footer {
   .photo {
     width: 45%;
   }
+  .contact {
+    width: unset;
+  }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 600px) {
   html {
     font-size: 12px;
   }
+
+  .header {
+    display: none;
+  }
+
   .profile {
     flex-wrap: nowrap;
     max-height: none;
@@ -275,4 +316,10 @@ footer {
   html {
     font-size: 22px;
   }
+
+  .container {
+    max-width: 1600px;
+    border-radius: 3px;
+  }
+
 }

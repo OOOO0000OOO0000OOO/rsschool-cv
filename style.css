@@ -425,7 +425,7 @@ footer {
   }
 
   .profile {
-    max-height: calc(.45 * (100vw - 120px) / 293 * 392 + 90px);
+    max-height: calc(.45 * (100vw - 120px) / 293 * 392 + 150px);
     padding: 45px 60px;
     flex-direction: column;
     flex-wrap: wrap;

@@ -237,7 +237,7 @@ code {
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 10px;
   transition: max-height .2s;
 }
 
@@ -269,15 +269,31 @@ footer {
   background-color: #2b2a2a;
 }
 
+.year {
+  display: block;
+}
+
 @media (max-width: 1200px) {
   html {
     font-size: 16px;
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width: 1080px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
   .container {
     width: 100%;
+  }
+
+  .profile {
+    width: 35%;
+  }
+
+  .wrapper {
+    width: 65%;
   }
 }
 
@@ -409,26 +425,47 @@ footer {
   }
 
   .profile {
-    max-height: calc(45vw / 300 * 400 + 90px);
-    padding: 45px 30px;
+    max-height: calc(.45 * (100vw - 120px) / 293 * 392 + 90px);
+    padding: 45px 60px;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-between;
+    column-gap: 25px;
+  }
+
+  .profile img{
+    order: 1;
+  }
+
+  .profile :nth-last-child(-n + 4) {
+    order: 3;
+  }
+
+  .profile .contacts a,
+  .profile .contacts span{
+    font-size: 1rem;
   }
 
   img.photo {
-    width: 45%;
+    width: 50%;
+  }
+
+  h1 {
+    margin: 0;
   }
 
   .contact {
     width: unset;
+    font-size: 1.25rem;
+  }
+
+  .contact::after,
+  .contact.active::after {
+    top: calc(50% - 8px);
   }
 }
 
 @media (max-width: 600px) {
-  .year {
-    display: block;
-  }
 
   html {
     font-size: 14px;

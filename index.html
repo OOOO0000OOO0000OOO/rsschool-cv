@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ksenia Neustroeva</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/an-old-hope.css">
+</head>
+<body>
+  <header class="header container">
+    <button class="burger">
+      <span class="burger-line burger-line-1"></span>
+      <span class="burger-line burger-line-2"></span>
+  </button>
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="#about" class="nav-link">About Me</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#languages" class="nav-link">Languages</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main container">
+    <section class="profile">
+      <img class="photo" src="./images/me.JPG" alt="Photo">
+      <h1>Ksenia <br>Neustroeva</h1>
+      <p class="geo">Saint Petersburg, Russia</p>
+      <button class="contact">Contact Info</button>
+      <div class="contacts">
+        <ul class="list">
+          <li class="list_item"><span class="bold">E-mail: </span><a href="mailto:">chrysostomost0000@gmail.com</a></li>
+          <li class="list_item"><span class="bold">Discord: </span><a href="https://discord.com/users/777585234324750347">Ksenia#5397</a></li>
+          <li class="list_item"><span class="bold">GitHub: </span><a href="https://github.com/k0ntinuum">k0ntinuum</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="wrapper">
+      <section class="about_me" id="about">
+        <h2>About Me</h2>
+        <p>I'm studying at Saint Petersburg University (SPBU), majoring in physics. I’m passionate about Web Technologies and Development, so my aim is to become a proficient Front-End Web developer. This September I've enrolled to the Rolling Scopes school for a course in Front-End Development and have been thoroughly enjoying the learning process ever since.</p>
+        <p>Regarding my motivation to continue doing what I do, expanding my knowledge and skill-set, my answer is always the same: I want to positively influence people's lives.</p>
+      </section>
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <ul class="list">
+          <li class="list_item"><span>HTML5 / CSS / SCSS / SASS</span></li>
+          <li class="list_item"><span>JavaScript / TypeScript</span></li>
+          <li class="list_item"><span>Node.js</span></li>
+          <li class="list_item"><span>webpack</span></li>
+          <li class="list_item"><span>Git</span></li>
+          <li class="list_item"><span>Figma / Photoshop / Illustrator</span></li>
+          <li class="list_item"><span>Linux / C / C++ Basics</span></li>
+        </ul>
+      </section>
+      <section class="code_example" id="code">
+        <h2>Code Example</h2>
+        <pre><code class="javascript">const process = require('process');
+          const fs = require('fs');
+          const path = require('path');
+          
+          const filePath = path.join(__dirname, 'text.txt');
+          const readStream = fs.createReadStream(filePath, 'utf-8');
+
+          readStream.on('data', data => process.stdout.write(data));
+        </code></pre>
+      </section>
+      <section class="education" id="education">
+        <h2>Education</h2>
+        <h4>Saint Petersburg State University</h4>
+        <p><span class="list_item">Electromagnetic and Acoustic Processes </span> <span class="year">(2020 — present)</span></p>
+        <h4>Courses</h4>
+        <p><span class="list_item">RS School: «JavaScript/Front-end. Stage 1» </span><span class="year">(2021)</span></p>
+        <p><a target="_blank" href="https://stepik.org/217" class="list_item">Computer Science Center: «Algorithms: Theory and Practice. Toolbox» </a><span class="year">(2021)</span></p>
+        <p><a target="_blank" href="https://stepik.org/1547" class="list_item">Computer Science Center: «Algorithms: Theory and Practice. Data Structures» </a><span class="year">(2021)</span></p>
+      </section>
+      <section class="languages" id="languages">
+        <h2>Languages</h2>
+        <p><span class="bold">Russian: </span> Native</p>
+        <p><span class="bold">English: </span>B2</p>
+        <p><span class="bold">Japanese: </span>N4</p>
+      </section>
+    </div>
+  </main>
+  <footer class="footer container">
+    <span class="footer_info">2022. Ksenia Neustroeva</span>
+    <a target="_blank" href="https://github.com/k0ntinuum"><img class="github" src="./images/GitHub-Mark-Light-120px-plus.png" alt=""></a>
+    <a target="_blank" href="https://rs.school/js"><img class="rsschool" src="./images/rs_school_js.svg" alt=""></a>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>

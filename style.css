@@ -20,6 +20,16 @@ html {
   font-variant: all-small-caps;
 }
 
+.skills span,
+.about_me p,
+.education p span,
+.education p a,
+.languages p, .languages p span {
+  font-variant: normal;
+  font-size: 0.85rem;
+  line-height: 1.6rem;
+}
+
 .header {
   padding: 10px 0 20px;
   margin-top: 0;
@@ -124,9 +134,10 @@ h4 {
   font-weight: normal;
 }
 
-p,
-span,
-a {
+.profile p,
+.profile span,
+.profile a,
+header a {
   font-size: 1.125rem;
 }
 
@@ -247,7 +258,7 @@ img.photo {
 
 .github,
 .rsschool {
-  height: 16px;
+  height: 1.25rem;
 }
 
 footer {
@@ -255,11 +266,12 @@ footer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  background-color: #2b2a2a;
 }
 
 @media (max-width: 1200px) {
   html {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -419,7 +431,7 @@ footer {
   }
 
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .profile {
@@ -443,7 +455,7 @@ footer {
 
 @media (min-width: 1500px) {
   html {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .container {
@@ -451,4 +463,10 @@ footer {
     border-radius: 3px;
   }
 
+}
+
+@media (min-width: 1700px) {
+  html {
+    font-size: 22px;
+  }
 }
